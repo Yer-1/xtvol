@@ -1,0 +1,26 @@
+<__main__.Time object at 0x000002CD2C2572C0> 
+0x000002CD2C2572C0> is the memory address in string representation
+ def get_date(self):
+        return self.Date
+    def get_month(self):
+        return self.Month
+    def get_year(self):
+        return self.Year
+
+
+
+
+add IF NOT EXIST if terminal yields "Table directory already exists"
+
+---------------------------------------------------------------------------
+import sqlite3
+import datetime
+
+con = sqlite3.connect("demodb.db")
+
+cur= con.execute("CREATE TABLE IF NOT EXISTS Task(task TEXT, duedate TEXT, Timeleft TEXT)")
+#let due date use user's input 
+#INSERT INTO** use pyton to take user's input and pass it on to table :D
+#import time-- if the input time is before current, return "PAST DUE!!" 
+---------------------------------------------------------------------------------
+
